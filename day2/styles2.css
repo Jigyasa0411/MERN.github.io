@@ -1,21 +1,24 @@
-.Parent{
-    background-color: aqua;
+.parent{
+    background-color:aqua;
     display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-   
-}
 
+}
 .child{
-    background-color: blanchedalmond;
-    border: 1px solid red;
-    flex-basis:100px;
-    flex-shrink: 0;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: red;
+
 }
-.search-box{
-   flex-grow:3;
-   flex-shrink: 1;
+.Parent1{
+    justify-content: space-between;
 }
-.cart{
-    flex-grow: 1;
+.Parent2{
+    justify-content: space-evenly;
+}
+.Parent3{
+    justify-content: space-around;
+
+}
+.Parent4{
+    justify-content: flex-end;
 }
