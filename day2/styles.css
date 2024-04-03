@@ -22,3 +22,9 @@
 .img{
     background-color: blue;
 }
+.Parent{
+    font-size: 32px;
+}
+.child{
+    font-size: 2em;
+}
