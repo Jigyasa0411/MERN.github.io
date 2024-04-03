@@ -24,9 +24,12 @@
 }
 .Parent{
     font-size: 32px;
+    background-color: azure;
+    
 }
 .child{
     font-size: 2em;
+    background-color: aquamarine;
 }
 .btn{
     display: block;
@@ -47,4 +50,30 @@
     color: white;
     width: 100px;
     margin-top: 10px;
+}
+body{
+    margin: 10px;
+}
+
+
+.pp{
+    background-color: palevioletred;
+    height:100px;
+    padding: 16px;
+
+
+}
+.ch{
+    height: 50vh;
+    background-color:green;
+    min-height: 200px;
+    padding: 16px 32px;
+    overflow: scroll;
+    width: 25%;
+
+}
+.pp{
+    ol{
+        background-color: blueviolet;
+    }
 }
