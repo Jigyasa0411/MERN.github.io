@@ -11,11 +11,14 @@
        border: 1px solid black;
        width: 80px;
        box-sizing: border-box;
-       margin 0 0 0 auto : ;
+       margin: 0 0  auto 0 ;
 }
 .heading{
     margin: 16px;
     padding:16px;
     border: 1px solid black;
     
+}
+.img{
+    background-color: blue;
 }
