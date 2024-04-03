@@ -1,11 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
     
-}
 .parent{
-    background-color: palevioletred;
+   
      margin:0px 20px 16px;
      padding: 16px;
        border: 1px solid black;
@@ -52,12 +48,15 @@
     margin-top: 10px;
 }
 body{
-    margin: 10px;
+   
+    padding: 10px 32px;
+    height: 100vh;
+    width: 100vw;
 }
 
 
 .pp{
-    background-color: palevioletred;
+    
     height:100px;
     padding: 16px;
 
@@ -76,4 +75,19 @@ body{
     ol{
         background-color: blueviolet;
     }
+    ul:first-child{
+        background-color: pink;
+
+        
+    }
+    ul:last-child{
+       background-color: greenyellow;
+       li:nth-child(2){
+        background-color: brown;
+       }
+
+    }
+  
+
 }
+
