@@ -35,3 +35,16 @@ env
 let message="hello";
 message="else";
 console.log(message);
+
+let userAge="abcs";
+userAge="abcs";
+console.log(typeof(userAge));
+let arr=['a','b','c','d'];
+arr[0]='abcd';
+console.log(arr);
+
+
+let str="12";
+let age=20;
+let ans=age+str;
+console.log(ans);
