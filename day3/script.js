@@ -88,23 +88,46 @@
 // a();
 // b();
 //function declaration 
-function print(){
-    console.log('2')
+// function print(){
+//     console.log('2')
+// }
+
+// //function assignment (name)
+// const a=function print(){
+//     console.log('2')
+// }
+// //function assignment (anonymous)
+// const b=function print(){
+//     console.log('2')
+// }
+
+
+
+// //arrow function assignment 
+// let c=() =>{
+//     console.log('2')
+// }
+// print();
+// a();
+// b();
+//switch case
+let a=2;
+switch(a){
+    case 1:{
+        console.log('one');
+        break;
+    }
+    case 2:{
+        console.log('Two');
+        break;
+    }
+    case 3:{
+        console.log('three');
+        break;
+    }
+    default:{
+        console.log('not1,2,3');
+    }
 }
-
-//function assignment (name)
-const a=function print(){
-    console.log('2')
-}
-//function assignment (anonymous)
-const b=function print(){
-    console.log('2')
-}
-
-print();
-a();
-b();
-
-
 
 
