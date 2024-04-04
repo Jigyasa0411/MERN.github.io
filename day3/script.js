@@ -111,23 +111,33 @@
 // a();
 // b();
 //switch case
-let a=2;
-switch(a){
-    case 1:{
-        console.log('one');
-        break;
-    }
-    case 2:{
-        console.log('Two');
-        break;
-    }
-    case 3:{
-        console.log('three');
-        break;
-    }
-    default:{
-        console.log('not1,2,3');
-    }
-}
+//let a=2;
+// switch(a){
+//     case 1:{
+//         console.log('one');
+//         break;
+//     }
+//     case 2:{
+//         console.log('Two');
+//         break;
+//     }
+//     case 3:{
+//         console.log('three');
+//         break;
+//     }
+//     default:{
+//         console.log('not1,2,3');
+//     }
+//
 
 
+
+const obj={
+    i:'one',
+    'name':'jigyasa',
+    12:'twelve'
+};
+console.log(obj);
+ 
+
+ 
