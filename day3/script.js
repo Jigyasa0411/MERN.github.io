@@ -77,11 +77,34 @@
 // print(s);
 
 //conditional operator
-let a =1;
-if(a){
-    console.log('yes')
+// let a =1;
+// if(a){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+// print();
+// a();
+// b();
+//function declaration 
+function print(){
+    console.log('2')
 }
-else{
-    console.log('no')
+
+//function assignment (name)
+const a=function print(){
+    console.log('2')
 }
+//function assignment (anonymous)
+const b=function print(){
+    console.log('2')
+}
+
+print();
+a();
+b();
+
+
+
 
