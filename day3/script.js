@@ -58,13 +58,30 @@
 // let n=number(str);
 // console.log(p,n);
 
-let a='12';
-let b=12;
-if(a==b){
-    console.log('yes');
+// let a='12';
+// let b=12;
+// if(a==b){
+//     console.log('yes');
+// }
+// else{
+//     console.log('no');
+
+// }
+
+// function print(str){
+//     console.log(str);
+
+    
+// }
+// const s="hello";
+// print(s);
+
+//conditional operator
+let a =1;
+if(a){
+    console.log('yes')
 }
 else{
-    console.log('no');
-
+    console.log('no')
 }
 
