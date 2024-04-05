@@ -66,5 +66,13 @@
 // console.log(window)
 //  console.dir(window.document)
 //  //console.dir(window)
-const res=document.getElementsByTagName("h2");
-console.log(res);
+// const res=document.getElementsByTagName("h2");
+// console.log(res);
+// const res =
+// document.querySelectorAll("h2")
+const ne=document.createElement("h1");
+
+innerText="Dynamic text";
+// console.log(ne);
+document.body.appendChild(ne);
+
