@@ -74,5 +74,8 @@ const ne=document.createElement("h1");
 
 innerText="Dynamic text";
 // console.log(ne);
-document.body.appendChild(ne);
+// document.body.appendChild(ne);
+const firstdiv=document.getElementsByTagName(h1)
+firstdiv[0].appendChild(ne);
+
 
