@@ -42,10 +42,10 @@
 // console.log(checkIfObject(variable1)); 
 // console.log(checkIfObject(variable2)); 
 // console.log(checkIfObject(variable3)); 
- const arr=['name',2,true];
- const obj={
-    'name':'Ajay' , age:20 ,1:'else'
- }
+//  const arr=['name',2,true];
+//  const obj={
+//     'name':'Ajay' , age:20 ,1:'else'
+//  }
 // for(let i=0;i<4;i++){
 //     console.log(i);
 //}
@@ -56,7 +56,10 @@
 // for(let i of obj){
 //     console.log(i);
 // }
-for (let i in arr){
-    console.log(i);
-}
+// for (let i in arr){
+//     console.log(i);
 
+console.log(window)
+
+console.log(innerHeight)
+console.log(innerWidth)
