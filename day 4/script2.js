@@ -19,8 +19,8 @@
 // obj.name=20;
 // console.log(obj);
 
-let arr=[1,2,3,4];
-arr=[2,3,4];
-console.log(arr);
+const arr=[1,2,3,4];
+arr[10]=20;
+console.log(typeof(arr));
 
 
