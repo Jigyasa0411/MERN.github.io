@@ -26,7 +26,7 @@
 
 //program to find if it is object or not
 function checkIfObject(variable) {
-    if (typeof variable === 'object') {
+    if (typeof variable === 'object' && variable !== null && !Array.isArray(variable)) {
         return 'yes';
     } else {
         return 'no';
