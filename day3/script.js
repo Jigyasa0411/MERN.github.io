@@ -132,12 +132,20 @@
 
 
 
-const obj={
-    i:'one',
-    'name':'jigyasa',
-    12:'twelve'
-};
-console.log(obj);
+// const obj={
+//     i:'one',
+//     'name':'jigyasa',
+//     12:'twelve'
+// };
+// console.log(obj);
  
 
+const obj={
+    'firstName':'Ajay',
+    'LastName': 'singh',
+    'age':20,
+    'address':'Delhi',
+};
+const x=prompt('please tell the property to know');
+ console.log(x);
  
