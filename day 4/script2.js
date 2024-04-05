@@ -50,10 +50,13 @@
 //     console.log(i);
 //}
 // 
-for(let i of arr){
-    console.log(i);
-}
-for(let i of obj){
+// for(let i of arr){
+//     console.log(i);
+// }
+// for(let i of obj){
+//     console.log(i);
+// }
+for (let i in arr){
     console.log(i);
 }
 
