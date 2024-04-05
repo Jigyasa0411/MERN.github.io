@@ -7,11 +7,17 @@
 // console.log(res);
 
 // res.removeChild(c);
-function getInfo(){
+function getInfo(e){
 //     const d=document.querySelector("div");
 //    // const el=document.createElement("");
 //     el.innerText="btn was clicked";
     // d.prepend("my name is jigyasa");
-    console.log("Btn clicked");
-    document.body.innerHTML="this button was clicked";
+    // let txt = document.querySelector(".text");
+    // console.log("Btn clicked");
+    // txt.innerHTML="this button was clicked";
+    console.log(e);
+    // style.attribute('style','color:red')
+    // style.attribute('style','backgroundcolor:green')
+    e.target.style.backgroundColor='red';
+    e.target.style.color='green'
 }
