@@ -12,6 +12,11 @@ const obj={
     "name": "Ajay",
     "lastname":"singh",
 }
+// const str=json.stringify(obj);
+// // console.log(obj);
+// // document.write(obj);
 
+obj.name=20;
 console.log(obj);
-document.write(obj);
+
+
