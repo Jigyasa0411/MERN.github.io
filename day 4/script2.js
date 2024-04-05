@@ -8,10 +8,10 @@
 //     console.log("no");
 // }
 
-// const obj={
-//     "name": "Ajay",
-//     "lastname":"singh",
-// }
+const obj={
+    "name": "Ajay",
+    "lastname":"singh",
+}
 // // const str=json.stringify(obj);
 // // // console.log(obj);
 // // // document.write(obj);
@@ -21,6 +21,7 @@
 
 const arr=[1,2,3,4];
 arr[10]=20;
-console.log(typeof(arr));
+console.log(Array.isArray(arr));
+console.log(Array.isArray(obj));
 
 
