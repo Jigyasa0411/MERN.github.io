@@ -59,7 +59,12 @@
 // for (let i in arr){
 //     console.log(i);
 
-console.log(window)
+// console.log(window)
 
-console.log(innerHeight)
-console.log(innerWidth)
+// console.log(innerWidth)/
+// console.log(window.document)
+// console.log(window)
+//  console.dir(window.document)
+//  //console.dir(window)
+const res=document.getElementsByTagName("h2");
+console.log(res);
