@@ -11,5 +11,16 @@ const firstNameChange=()=>{
 }
 function submitForm(e){
     e.preventDefault();
-    console.log(e)
+    //console.dir(e.target.value);
+    const t= e.target
+    for(let i=0;i<t.length;i++){
+    //    console.dir(t[i].value);
+    //    console.log(t[i].type);
+       const ty=t[i].type;
+       const vl=t[i].value;
+       console.log(ty,vl);
+       if(ty=='checkbox'){
+        console.log(t[i].checked)
+       }
+    }
 }
