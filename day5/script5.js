@@ -17,8 +17,16 @@
     
 // }
 // printarray(arr);
- function printpretty(elem){
- console.log(':',elem);
+console.log('GEC start');
+
+ function printpretty(){
+    console.log('prettystart');
+    let ans=2+3;
+ console.log(ans);
+ console.log('prettyEnd');
 }
 
-setTimeout(printpretty, 10000);
+// setTimeout(printpretty, 10000);
+// console.log('GEC End');
+const btn=document.getElementById('btn');
+btn.addEventListener("click",printpretty);
