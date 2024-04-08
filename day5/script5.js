@@ -17,16 +17,28 @@
     
 // }
 // printarray(arr);
-console.log('GEC start');
+// console.log('GEC start');
 
- function printpretty(){
-    console.log('prettystart');
-    let ans=2+3;
- console.log(ans);
- console.log('prettyEnd');
-}
+//  function printpretty(){
+//     console.log('prettystart');
+//     let ans=2+3;
+//  console.log(ans);
+//  console.log('prettyEnd');
+// }
 
-// setTimeout(printpretty, 10000);
-// console.log('GEC End');
-const btn=document.getElementById('btn');
-btn.addEventListener("click",printpretty);
+// // setTimeout(printpretty, 10000);
+// // console.log('GEC End');
+// const btn=document.getElementById('btn');
+// btn.addEventListener("click",printpretty);
+console.log('start')
+// const req =fetch("https://api.github.com/users/vikhyat9690");
+
+// console.log(req);
+// req.then(()=>console.log('Fetched'));
+
+// console.log('End');
+fetch('https://dummyjson.com/products/1')
+.then(res => console.log(res))
+// .then(json => console.log(json))
+console.log('End');
+            
