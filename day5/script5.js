@@ -47,22 +47,36 @@ console.log("hello");
 function callApi(){
  fetch("https://newsapi.org/v2/top-headlines?country=in&apikey=00f57a85abee4418ac93ddd066f4bbf0")
  .then(res=>res.json())
- .then((res)=>{
-    console.log(res);
+ .then((data)=>{
+    //console.log(res);
+    renderUI(data);
  })
 }
 //   //callApi();
   
   function renderUI(data){
-    const articles= data.articles;
-    
-   const root = document.getElementById("root");
-   const ar=articles[0];
    
-   console.log(ar);
-    const div=document.createElement("div");
-    div.innerText='card';
+    //console.log(articles);
 
+    const root = document.getElementById("root");
+    const articles= data.articles;
+    for(let i=0;i<articles.length;i++){
+   const ar=articles[i];
+   //console.log(ar);
+   const div=document.createElement("div");
+   div.setAttribute("class","news-card");
+
+   const h3=document.createElement("h3");
+   h3.innerText = ar.title;
+   //h3.innerchild()
+    const img=document.createElement("img");
+    img.src=ar.urlToImage;
+    div.appendChild(h3);
+    div.appendChild(img);
     root.appendChild(div);
+    const a=document.createElement("a");
+    a.innerText='read more....'
+    }
+
   }
   callApi();
