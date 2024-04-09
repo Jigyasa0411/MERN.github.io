@@ -37,10 +37,15 @@
 //     else{return false;}
 // });
 // console.log(ans);
-const arr=[10,22,34,50];
-const ans=arr.reduce((total,curr,c,d)=>{
-    console.log(total,curr,c,d);
-    return total+curr;
+// const arr=[10,22,34,50];
+// const ans=arr.reduce((total,curr,c,d)=>{
+//     console.log(total,curr,c,d);
+//     return total+curr;
+// });
+// console.log(ans);
+const arr=['ab','cd','xy','z'];
+const ans=arr.reduce((total,curr)=>{
+    console.log(total,curr);
 });
 console.log(ans);
 
