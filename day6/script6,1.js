@@ -9,10 +9,33 @@
 // console.log(ans);
 // console.log(arr1);
 // console.log(arr2)
-const arr=[10,22,34];
+// const arr=[10,22,34];
+// const ans=arr.filter((a)=>{
+//     if(a>20 )return true;
+//     else return false;
+// })
+// console.log(arr);
+// console.log(ans);
+// const arr=[
+//     'Delhi','Mumbai','Chennai','Kolkata','Pune','India','Russia','USA'
+    
+// ]
+// const ans=arr.filter((s)=>{
+//     if(s.includes('i')|| s.includes('I')){
+//         return true;
+//     }
+//     else false;
+// });
+// console.log(ans);
+const arr=[
+    'Delhi','India','Mumbai-india','Chennai-INDIA','Shanghai','China','Beijing','china',
+    'Washington' ,'USA','Texas,USA','Iraq'
+]
 const ans=arr.filter((a)=>{
-    if(a>20 )return true;
-    else return false;
-})
-console.log(arr);
+    const ns=a.toLowerCase();
+    if(ns.includes('india')){return true;}
+    else{return false;}
+});
 console.log(ans);
+
+
