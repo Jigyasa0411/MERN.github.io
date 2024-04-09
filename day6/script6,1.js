@@ -27,15 +27,23 @@
 //     else false;
 // });
 // console.log(ans);
-const arr=[
-    'Delhi','India','Mumbai-india','Chennai-INDIA','Shanghai','China','Beijing','china',
-    'Washington' ,'USA','Texas,USA','Iraq'
-]
-const ans=arr.filter((a)=>{
-    const ns=a.toLowerCase();
-    if(ns.includes('india')){return true;}
-    else{return false;}
+// const arr=[
+//     'Delhi','India','Mumbai-india','Chennai-INDIA','Shanghai','China','Beijing','china',
+//     'Washington' ,'USA','Texas,USA','Iraq'
+// ]
+// const ans=arr.filter((a)=>{
+//     const ns=a.toLowerCase();
+//     if(ns.includes('india')){return true;}
+//     else{return false;}
+// });
+// console.log(ans);
+const arr=[10,22,34,50];
+const ans=arr.reduce((total,curr,c,d)=>{
+    console.log(total,curr,c,d);
+    return total+curr;
 });
 console.log(ans);
+
+
 
 
