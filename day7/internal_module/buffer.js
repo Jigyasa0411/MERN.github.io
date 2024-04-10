@@ -22,6 +22,12 @@
 // //console.log(data)
 // );
 const http = require('http');
+const fs =require('fs');
+const data=fs.readFileSync('./data.json','utf8');
+//console.log(data);
+const dataObj=JSON.parse(data);
+const products = dataObj.products
+
 const htmlTemplate= `
 <!DOCTYPE HTML>
 <html>
@@ -47,14 +53,20 @@ const cardTemplate=`
 <h4>_Title_</h4>
 <p>_info_<p>
 </div>`
-const card1=cardTemplate
-            .replace('_Title_','Xiomi Note 11 pro')
-            .replace('_info_','This is a chinese mobile');
-const card2=cardTemplate
-            .replace('_Title_','iphone')
-            .replace('_info_','This is an apple mobile');
-const allCards=card1+card2;
-const page= htmlTemplate.replace('_PRODUCT_CARDS_', allCards);
+// const card1=cardTemplate
+//             .replace('_Title_',products[0].title)
+//             .replace('_info_',products[0].description);
+// const card2=cardTemplate
+//             .replace('_Title_',products[1].title)
+//             .replace('_info_',products[1].description);
+//const allCards=card1+card2;
+const allCards=products.map((elem)=>{
+    let newCard=cardTemplate;
+    newCard=newCard.replace('_Title_',elem.title).replace('_info_',elem.description);
+    return newCard;
+})
+const allCardsString = allCards.join(' ')
+const page= htmlTemplate.replace('_PRODUCT_CARDS_', allCardsString);
 const server= http.createServer((req,res)=>{
     console.log('request recieved')
     console.log(req.url);
