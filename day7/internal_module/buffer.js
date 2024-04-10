@@ -25,7 +25,12 @@ const http = require('http');
 const server= http.createServer((req,res)=>{
     console.log('request recieved')
     console.log(req.url);
-    res.end("hello");
+    res.writeHead(
+        200,{
+            'content-type':'text/html',
+        }
+    )
+    res.end("<h1>hello</h1>");
 });
 
 server.listen(1400, ()=>{

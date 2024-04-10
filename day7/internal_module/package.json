@@ -2,9 +2,11 @@
   "name": "internal_module",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "buffer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx kill-port 1400 && nodemon buffer"
+    
   },
   "author": "",
   "license": "ISC",
