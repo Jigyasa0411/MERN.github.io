@@ -26,6 +26,15 @@ const htmlTemplate= `
 <!DOCTYPE HTML>
 <html>
   <head>
+  <style>
+  .product_card{
+    max-width:500px;
+    margin:50px auto;
+    border:3px double brown;
+    border-radius:8px
+    padding:16px;
+  }
+  </style>
   </head>
     <body>
     _PRODUCT_CARDS_
@@ -41,7 +50,11 @@ const cardTemplate=`
 const card1=cardTemplate
             .replace('_Title_','Xiomi Note 11 pro')
             .replace('_info_','This is a chinese mobile');
-const page= htmlTemplate.replace('_PRODUCT_CARDS_', card1);
+const card2=cardTemplate
+            .replace('_Title_','iphone')
+            .replace('_info_','This is an apple mobile');
+const allCards=card1+card2;
+const page= htmlTemplate.replace('_PRODUCT_CARDS_', allCards);
 const server= http.createServer((req,res)=>{
     console.log('request recieved')
     console.log(req.url);
