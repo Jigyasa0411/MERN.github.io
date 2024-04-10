@@ -22,12 +22,14 @@
 // //console.log(data)
 // );
 const http = require('http');
-const app= http.createServer((req,res)=>{
+const server= http.createServer((req,res)=>{
     console.log('request recieved')
     console.log(req.url);
     res.end("hello");
 });
 
-app.listen(1400);
+server.listen(1400, ()=>{
+    console.log('.......Server started!.......')
+})
 
 
