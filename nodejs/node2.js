@@ -12,8 +12,9 @@
 // .catch((err)=>{
 //     console.log('Erroe occurred!')
 // })
-function getApi(){
-    const pr=fetch('https://api.github.com/users/deepal3440')
-    console.log(pr);
+async function getApi(){
+    const pr= await fetch('https://api.github.com/users/deepal3440')
+   console.log(pr);
+   const data=await pr.json()
 }
  getApi();
