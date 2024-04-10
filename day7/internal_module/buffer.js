@@ -22,15 +22,36 @@
 // //console.log(data)
 // );
 const http = require('http');
+const htmlTemplate= `
+<!DOCTYPE HTML>
+<html>
+  <head>
+  </head>
+    <body>
+    _PRODUCT_CARDS_
+    </body>
+    </html>
+`
+// const page=htmlTemplate.repl;
+const cardTemplate=`
+<div class='product_card'>
+<h4>_Title_</h4>
+<p>_info_<p>
+</div>`
+const card1=cardTemplate
+            .replace('_Title_','Xiomi Note 11 pro')
+            .replace('_info_','This is a chinese mobile');
+const page= htmlTemplate.replace('_PRODUCT_CARDS_', card1);
 const server= http.createServer((req,res)=>{
     console.log('request recieved')
     console.log(req.url);
     res.writeHead(
-        200,{
+        200//statuscode
+        ,{
             'content-type':'text/html',
         }
     )
-    res.end("<h1>hello</h1>");
+    res.end(page);
 });
 
 server.listen(1400, ()=>{
