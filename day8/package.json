@@ -1,12 +1,11 @@
 {
-  "name": "internal_module",
+  "name": "day8",
   "version": "1.0.0",
   "description": "",
-  "main": "buffer.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon buffer"
-    
+    "start": "nodemon script.js"
   },
   "author": "",
   "license": "ISC",

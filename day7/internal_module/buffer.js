@@ -52,6 +52,7 @@ const cardTemplate=`
 <div class='product_card'>
 <h4>_Title_</h4>
 <p>_info_<p>
+<img src="IMAGE"></img>
 </div>`
 // const card1=cardTemplate
 //             .replace('_Title_',products[0].title)
@@ -62,7 +63,7 @@ const cardTemplate=`
 //const allCards=card1+card2;
 const allCards=products.map((elem)=>{
     let newCard=cardTemplate;
-    newCard=newCard.replace('_Title_',elem.title).replace('_info_',elem.description);
+    newCard=newCard.replace('_Title_',elem.title).replace('_info_',elem.description).replace('IMAGE',elem.images[0]);
     return newCard;
 })
 const allCardsString = allCards.join(' ')
